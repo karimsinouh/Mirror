@@ -1,4 +1,4 @@
-package ui
+package ui.placeholder
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -11,7 +11,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun DefaultPlaceholder(){
+fun MirrorDefaultPlaceholder(){
     Box(
         Modifier
             .background(Color.Black.copy(0.2f))
