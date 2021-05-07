@@ -7,7 +7,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import javax.imageio.ImageIO
 
-private suspend fun loadImage(source:String): BufferedImage? = withContext(Dispatchers.IO){
+suspend fun loadImage(source:String): BufferedImage? = withContext(Dispatchers.IO){
     runCatching {
         val url= URL(source)
         val connection=url.openConnection() as HttpURLConnection
